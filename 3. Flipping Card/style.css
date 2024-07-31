@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins-light;
+    color: white;
+}
+body{
+    background-color: #302f2f;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circles-box {
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+.circle1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(218, 177, 250);
+}
+.circle2 {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(218, 177, 250);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.container-front-of-circles {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.container {
+    height: 300px;
+    width: 400px;
+    z-index: 100;
+    position: relative;
+    transition: 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+.container:hover {
+    transform: rotateY(180deg);
+}
+.card {
+    height: 100%;
+    width: 100%;
+    border: solid 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    backdrop-filter: blur(25px);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.card.back-face {
+    transform: rotateY(180deg);
+}
+.logo {
+    display: flex;
+    margin: 25px 25px;
+    float: left;
+}
+.logo-pic {
+    height: 30px;
+}
+.chip {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    border-radius: 5px;
+    margin: 25px 25px;
+}
+.header {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 5px;
+}
+.info {
+    width: 90%;
+    position: absolute;
+    top: 40%;
+    left: 25px;
+}
+.card-info {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 5px;
+}
+.name{
+    font-size: 1em;
+    font-weight: normal;
+    margin-top: 30px;
+    display: inline-block;
+}
+.date{
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+}
+.valid-date {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.back-info {
+    text-align: center;
+    margin: 10px;
+    font-size: 0.8em;
+}
+.magnet {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    margin-top: 30px;
+}
+.white-thing {
+    background: repeating-linear-gradient(rgb(204, 230, 230), #ffffff 5px);
+    height: 40px;
+    width: 70%;
+    border-radius: 5px;
+    margin: 30px;
+}
+.back-number {
+    color: black;
+    background-color: white;
+    position: absolute;
+    right: 65px;
+    top: 145px;
+    padding-left: -25px;
+}

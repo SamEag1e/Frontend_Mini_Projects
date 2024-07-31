@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+body {
+    background: url(fotis-fotopoulos-DuHKoV44prg-unsplash.jpg);
+    background-repeat: no-repeat;
+}
+.main-box {
+    height: 100vh;
+    min-height: 1280px;
+    width: 400px;
+    position: fixed;
+    left: -500px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+#hideshow {
+    display: none;
+}
+.btn-open {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    transition: all 0.1s ease;
+}
+#hideshow:checked ~.main-box {
+    left: 0;
+}
+#hideshow:checked ~.btn-open {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+}
+i {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+    padding-right: 5px;
+}
+.main-box a {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 5px;
+}
+.main-box .header {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    margin: 5px;
+    padding: 10px;
+}
+.main-box li {
+    padding: 10px 30px;
+}
+.main-box li:hover {
+    border-left: 3px white solid;
+    padding-left: 40px;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+.main-box .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+.main-box .social .social-icon {
+    font-size: 24px;
+    border-radius: 50%;
+}

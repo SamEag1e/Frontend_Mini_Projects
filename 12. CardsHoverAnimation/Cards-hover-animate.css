@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    position: relative;
+    width: 90%;
+    height: 640px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+.nav {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.card_one {
+    background-color: black;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+}
+.card_two {
+    background-color: blue;
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+.card_1,
+.card_2 {
+    height: 320px;
+    width: 240px;
+    border-radius: 24px;
+    margin: 8px;
+}
+.card_1 {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    z-index: 1;
+}
+.card_2 {
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    z-index: 2;
+}
+.nav:hover {
+    cursor: pointer;
+}
+.card_one:hover ~ .card_1 {
+    animation: play_1 10s linear;
+ }
+ @keyframes play_1 {
+    0% {
+        left: 240px;
+        z-index: 1;
+    }
+    10% {
+        left: 0;
+        z-index:-999;
+    }
+    11% {
+        z-index: 999;
+    }
+    20% {
+        left: 240px;
+        z-index: 999;
+    }
+    80% {
+        left: 240px;
+        z-index: 999;
+    }
+    90% {
+        left: 0;
+        z-index: 1;
+    }
+    100% {
+        left: 240px;
+        z-index: 1;
+    }
+}

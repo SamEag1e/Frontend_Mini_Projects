@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+input {
+    display: none;
+}
+.container {
+    min-width: 480px;
+    min-height: 320px;
+    width: 50%;
+    padding: 8px;
+    border-radius: 24px;
+    background-color: whitesmoke;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.container .header {
+    margin: 8px;
+    padding: 8px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.container .content {
+    display: flex;
+    justify-content: space-between;
+}
+.content .list_div .items {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+}
+.content .list_div .items :hover {
+    cursor: pointer;
+    text-decoration: underline blue 1px;
+}
+.content .text_content {
+    width: 90%;
+}
+.content .text_content .text {
+    font-size: 1em;
+    font-weight: normal;
+    margin: 8px;
+    padding: 8px;
+    text-align: justify;
+}
+#home:checked ~.content .list_div .home,
+#blog:checked ~.content .list_div .blog,
+#help:checked ~.content .list_div .help,
+#code:checked ~.content .list_div .code,
+#about:checked ~.content .list_div .about {
+    background-color: blue;
+    color: whitesmoke;
+}
+.container .text_content .text {
+    display: none;
+}
+#home:checked ~.content .text_content .home,
+#blog:checked ~.content .text_content .blog,
+#help:checked ~.content .text_content .help,
+#code:checked ~.content .text_content .code,
+#about:checked ~.content .text_content .about {
+    display: block;
+}

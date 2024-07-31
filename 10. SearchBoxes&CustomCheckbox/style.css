@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 150, 150);
+}
+.box {
+    height: 48px;
+    width: 240px;
+    margin: 24px;
+}
+.search-box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: all 0.5s ease;
+}
+#search {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    padding-left: 8px;
+}
+.icon {
+    height: 100%;
+    font-size: 48px;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    border-radius: 0 24px 24px 0;
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_box {
+    height: 56px;
+    width: 240px;
+   overflow: hidden;
+}
+form {
+    height: 48px;
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 24px;
+    background-color: rgb(87, 45, 45);
+    box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.5);
+}
+.search_box #search {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    padding-left: 8px;
+} 
+button {
+    position: absolute;
+    right: -1px;
+    height: 100%;
+    width: 48px;
+    border-radius: 0 24px 24px 0;
+    outline: none;
+    background-color: rgb(92, 91, 91);
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+button:hover {
+    cursor: pointer;
+}
+.icon:hover{
+    cursor: pointer;
+}
+#check:checked ~.search-box {
+    width: 48px;
+}
+#check:checked ~ .search-box .icon{
+    border-radius: 50%;
+    color: rgb(255, 150, 150);
+    background-color: white;
+}
+#check {
+    display: none;
+}
+.custom_checkbox {
+    width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 8px;
+    border-radius: 24px;
+    margin: 24px;
+}
+.custom_checkbox input {
+    width: 64px;
+    height: 32px;
+    background: rgb(204, 204, 204);
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 24px;
+    margin: 8px;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.custom_checkbox input::before {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(204, 204, 204);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.custom_checkbox .checkbox_status::before {
+    content: "DISABLED";
+    opacity: 0.5;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+#wifi:checked {
+    background-color: blue;
+}
+#wifi:checked:before {
+    left: 32px;
+}
+#wifi:hover {
+    cursor: pointer;
+}
+.custom_checkbox .checkbox_status:hover {
+    cursor: pointer;
+}
+#wifi:checked ~ .checkbox_status:before {
+    content: "ENABLED";
+    opacity: 1;
+}

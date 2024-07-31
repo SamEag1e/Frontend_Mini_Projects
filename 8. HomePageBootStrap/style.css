@@ -1,0 +1,65 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header {
+    background: url(handstyping.jpg);
+    background-size: cover;
+}
+header h1 {
+    text-shadow: 1px 1px 1px black, 2px 2px 2px red;
+}
+header .lead {
+    max-width: 80%;
+    text-align: justify;
+}
+section .col-3 p {
+    text-align: justify;
+}
+section .col-3 i {
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+.icon_box {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+.bg-info .rounded {
+    mix-blend-mode: darken;
+}
+.bg-info .three-images-box {
+    width: 80%;
+    height: 128px;
+}
+.three-images-box .ad-image {
+    width: 32%;
+    height: 100%;
+}
+footer .bigger {
+    font-size: 1em;
+}
+footer .smaller {
+    font-size: 0.75em;
+}
+footer .text-start {
+    background-color: white;
+    padding-bottom: 8px;
+    border-radius: 8px;
+}
+@media (min-width: 991.98px) { 
+    header .lead {
+        max-width: 50%;
+        text-align: center;
+    }
+ }
+ @media (max-width: 767.98px) { 
+    footer .left .links,
+    footer .middle .links {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .right .links {
+        margin-bottom: 32px;
+    }
+ }
