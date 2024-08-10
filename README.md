@@ -16,11 +16,11 @@ git clone https://github.com/SamEag1e/Frontend_Mini_Projects.git
 Open the index.html file in your browser to view the projects.
 
 ## Contributing
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Commit your changes (git commit -m 'Add new feature').
-Push to the branch (git push origin feature-branch).
-Open a pull request.
+* Fork the repository.
+* Create a new branch (git checkout -b feature-branch).
+* Commit your changes (git commit -m 'Add new feature').
+* Push to the branch (git push origin feature-branch).
+* Open a pull request.
 
 ## License
 This project is licensed under the MIT License.
