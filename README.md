@@ -10,7 +10,7 @@ Basic animations and transitions
 ## Installation
 https://github.com/SamEag1e/Frontend_Mini_Projects.git
 
-##Images
+## Images
 
 ### 1. Profile Card
 ![1  Profile-Card](0.images/1.ProfileCard.png)
