@@ -4,12 +4,14 @@ HTML CSS BOOTSTRAP JS (BASICS)
 A collection of small front-end projects to practice and demonstrate various web development skills using HTML, CSS, and JavaScript.
 
 ## Features
-Responsive design examples
-Interactive UI components
-Basic animations and transitions
+* Responsive design examples
+* Interactive UI components
+* Basic animations and transitions
 
 ## Installation
-https://github.com/SamEag1e/Frontend_Mini_Projects.git
+```
+git clone https://github.com/SamEag1e/Frontend_Mini_Projects.git
+```
 
 ## Images
 
