@@ -1,6 +1,5 @@
 # FrontendSimpleMiniProjects
-HTML CSS BOOTSTRAP JS (BASICS)
-
+## Description
 A collection of small front-end projects to practice and demonstrate various web development skills using HTML, CSS, and JavaScript.
 
 ## Features
